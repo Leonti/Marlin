@@ -380,11 +380,11 @@
         #define DOGLCD_SCK      23
         #define DOGLCD_A0       LCD_PINS_DC
       #else
-        #define LCD_PINS_RS     16
-        #define LCD_PINS_ENABLE 17
-        #define LCD_PINS_D4     23
-        #define LCD_PINS_D5     25
-        #define LCD_PINS_D6     27
+//        #define LCD_PINS_RS     16
+//        #define LCD_PINS_ENABLE 17
+//        #define LCD_PINS_D4     23
+//        #define LCD_PINS_D5     25
+//        #define LCD_PINS_D6     27
       #endif
 
       #define LCD_PINS_D7       29
@@ -517,8 +517,13 @@
       // not connected to a pin
       #define LCD_BACKLIGHT_PIN 65   // backlight LED on A11/D65
 
-      #define DOGLCD_A0         44
-      #define DOGLCD_CS         66
+      #define DOGLCD_CS       27
+      #define DOGLCD_MOSI     29
+      #define DOGLCD_SCK      37
+      #define DOGLCD_A0       25
+
+//      #define DOGLCD_A0         44
+//      #define DOGLCD_CS         66
 
       // GLCD features
       //#define LCD_CONTRAST   190
@@ -527,9 +532,9 @@
       //#define LCD_SCREEN_ROT_180
       //#define LCD_SCREEN_ROT_270
 
-      #define BTN_EN1           40
-      #define BTN_EN2           63
-      #define BTN_ENC           59
+      #define BTN_EN1           17
+      #define BTN_EN2           23
+      #define BTN_ENC           35
 
       #define SD_DETECT_PIN     49
       #define KILL_PIN          64
