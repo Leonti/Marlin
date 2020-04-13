@@ -51,3 +51,27 @@
 #endif
 
 #include "pins_RAMPS.h"
+
+#undef SD_DETECT_PIN
+#define SD_DETECT_PIN -1
+
+#define FORCE_SOFT_SPI true
+
+#undef DOGLCD_CS
+#undef DOGLCD_MOSI
+#undef DOGLCD_SCK
+#undef DOGLCD_A0
+
+#define DOGLCD_CS       27
+#define DOGLCD_MOSI     29
+#define DOGLCD_SCK      37
+#define DOGLCD_A0       25
+
+
+#undef BTN_EN1
+#undef BTN_EN2
+#undef BTN_ENC
+
+#define BTN_EN1                         17
+#define BTN_EN2                         23
+#define BTN_ENC                         35
